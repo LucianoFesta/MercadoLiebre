@@ -13,6 +13,10 @@ header{
     background-color: #EAC926;
 }
 
+.navbar{
+    display: none;
+}
+
 .navbar ul{
     Padding: 10px 0;
 }
@@ -29,6 +33,9 @@ header{
 
 h4{
     font-size: 24px;
+    color: #666;
+    text-align: center;
+
 }
 
 .logo{
@@ -72,12 +79,43 @@ h4{
     width: 90%;
     margin: auto;
     padding: 20px;
-    background-color: #666;
+    background-color: #ebebeb;
 }
 
-article img{
-    width: 100%;
+.container-div{
+    margin-top: 20px;
+}
+
+.articulo-main{
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.articulo-main img{
+    width: 100%;   
+}
+
+.articulo-detalle{
+    background-color: white;
+    margin-top: 0;
+    padding: 10px 10px;
+    display: none;
+}
+
+.articulo-detalle i{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #39b54a;
+}
+
+.descuento{
+    color: #39b54a;
+}
+
+.descripcion{
     padding-top: 20px;
+    color: #ebebeb;
 }
 
 .precio{
@@ -108,6 +146,29 @@ footer{
 .item-footer i{
     color: #1259c3;
     font-size: 30px;
+}
+
+
+@media(min-width: 481px){
+    .articulo-detalle{
+        display: block;
+    }
+
+    .articulo-main{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media(min-width: 769px){
+
 }
 
 
