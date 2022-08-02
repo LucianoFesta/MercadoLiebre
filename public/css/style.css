@@ -9,6 +9,15 @@ body{
     font-size: 12px;
 }
 
+h4{
+    font-size: 24px;
+    color: #666;
+    margin: 15px;
+}
+
+
+/* HEADER */
+
 header{
     background-color: #EAC926;
 }
@@ -31,26 +40,31 @@ header{
     color: black;
 }
 
-h4{
-    font-size: 24px;
-    color: #666;
-    text-align: center;
-
+.div-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
-    width: 250px;
+    width: 50%;
     height: 100px;
     padding-left: 30px;
 }
 
 .search{
-    padding-left: 20px;
+    margin-left: 10px;
 }
 
 .search input{
     border-color: #666;
     border-radius: 5%;
+    padding: 3px;
+}
+
+.search i{
+    color: #666;
+    padding: 3px;
 }
 
 .compraTarjeta{
@@ -75,8 +89,10 @@ h4{
     width: 100%;
 }
 
+
+/* MAIN */
+
 .container{
-    width: 90%;
     margin: auto;
     padding: 20px;
     background-color: #ebebeb;
@@ -86,9 +102,12 @@ h4{
     margin-top: 20px;
 }
 
+.blanco{
+    background-color: white;
+}
+
 .articulo-main{
     margin-top: 10px;
-    padding: 15px;
 }
 
 .articulo-main img{
@@ -100,18 +119,31 @@ h4{
     margin-top: 0;
     padding: 10px 10px;
     display: none;
+    border-top: 1px solid #ebebeb;;
+    position: relative;
 }
 
 .articulo-detalle i{
-    padding-top: 5px;
-    padding-bottom: 15px;
-    font-size: 15px;
     color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 .descuento{
     color: #39b54a;
+    /* width: 70%; */
+    margin-left: 10px;
 }
+
 
 .descripcion{
     padding-top: 20px;
@@ -120,11 +152,21 @@ h4{
 
 .precio{
     font-size: 18px;
+    /* width: 30%; */
+}
+
+.precio-articulo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .descuento, .descripcion{
     font-size: 16px;
 }
+
+
+/* FOOTER */
 
 footer{
     color: #666;
@@ -150,6 +192,50 @@ footer{
 
 
 @media(min-width: 481px){
+    
+    .div-logo{
+        justify-content: space-around;
+    }
+    
+    .div-logo-tarjeta{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+
+    .navbar-left{
+        display: flex;
+    }
+
+    .navbar-rigth{
+        display: flex;
+    }
+
+    .navbar li{
+        margin: 10px;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    .articulo-main{
+        width: 45%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .container-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .articulo-detalle{
         display: block;
     }
@@ -158,16 +244,23 @@ footer{
         box-shadow: 0 0 10px rgb(100, 100, 100);
     }
 
-    .navbar{
-        display: block;
-    }
-
-    .burger-menu{
-        display: none;
-    }
 }
 
 @media(min-width: 769px){
+
+    .container-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .articulo-main{
+        width: 20%;
+        height: 100%;
+        margin: 10px;
+    }
+
+
 
 }
 
