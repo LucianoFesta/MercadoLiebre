@@ -43,7 +43,6 @@ header{
 .div-logo{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .logo{
@@ -56,15 +55,19 @@ header{
     margin-left: 10px;
 }
 
-.search input{
-    border-color: #666;
-    border-radius: 5%;
-    padding: 3px;
+.search-input{
+    border:none;
+    border-radius: 5px;
+    padding: 5px 8px 5px 5px;
+    
 }
 
-.search i{
+.search button{
     color: #666;
     padding: 3px;
+    border: none;
+    background-color: #ffffff;
+    margin-left: -25px;
 }
 
 .compraTarjeta{
@@ -301,6 +304,10 @@ footer{
 }
 
 @media(min-width: 769px){
+
+    .search-input{
+        padding: 10px 150px 10px 10px;
+    }
 
     .container-div{
         display: flex;
