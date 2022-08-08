@@ -62,12 +62,21 @@ header{
     
 }
 
+.search button i{
+    transition: all .7s ease-in-out;
+}
+
 .search button{
     color: #666;
     padding: 3px;
     border: none;
     background-color: #ffffff;
     margin-left: -25px;
+    cursor: pointer;
+}
+
+.search button i:hover{
+    color: #ebebeb;
 }
 
 .compraTarjeta{
@@ -111,10 +120,12 @@ header{
 
 .articulo-main{
     margin-top: 10px;
+    transition: all .5s ease-in-out;
 }
 
 .articulo-main img{
-    width: 100%;   
+    width: 100%;
+    transition: all .5s ease-in-out;   
 }
 
 .articulo-detalle{
@@ -141,6 +152,11 @@ header{
     top: -15px;
 }
 
+.articulo-detalle i:hover{
+    transform: rotate(-90deg);
+    transition: all .3s ease-in-out;
+}
+
 .descuento{
     color: #39b54a;
     /* width: 70%; */
@@ -150,7 +166,12 @@ header{
 
 .descripcion{
     padding-top: 20px;
-    color: #ebebeb;
+    color: #666;
+    display: none;
+}
+
+.articulo-main:hover .descripcion{
+    display: block;
 }
 
 .precio{
@@ -175,6 +196,21 @@ footer{
     color: #666;
 }
 
+.item-footer i{
+    color: #1259c3;
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.copy{
+    text-align: center;
+}
+
+.item-footer i:hover{
+    color: #EAC926;
+}
+
 .item-footer{
     padding: 30px;
     text-align: center;
@@ -186,11 +222,6 @@ footer{
 
 .item-footer p{
     margin-top: 0;
-}
-
-.item-footer i{
-    color: #1259c3;
-    font-size: 30px;
 }
 
 
@@ -246,6 +277,17 @@ footer{
     padding: 10px;
 }
 
+/* LOGIN */
+
+.btn-login{
+    transition: all .4s ease-in-out;
+}
+
+.btn-login:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
 
 
 @media(min-width: 481px){
@@ -297,7 +339,7 @@ footer{
         display: block;
     }
 
-    .articulo-main{
+    .articulo-main:hover{
         box-shadow: 0 0 10px rgb(100, 100, 100);
     }
 
@@ -326,6 +368,10 @@ footer{
         flex-direction: column;
         width: 80%;
         margin:auto;
+    }
+
+    .items-footer{
+        display: flex;
     }
 
 
